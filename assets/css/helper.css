@@ -1,0 +1,37 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Poppins&display=swap');
+
+:root {
+    --primary-color: #ededed;
+    --secondary-color: #ffba00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+body{
+    background-color: var(--primary-color);
+}
+
+a,a:link,a:visited{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Asap', sans-serif;
+}
+
+.img-fluid,.gallery-img img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+.section-heading{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 30px 0;
+    text-align: center;
+}

@@ -1,0 +1,324 @@
+/* =========== Header Section ============ */
+.header{
+    background-color: #000;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.heading h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 300;
+}
+.heading p {
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.navbar ul li{
+    list-style: none;
+    background-color: var(--secondary-color);
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar ul a:link,.navbar ul a:visited{
+    display: block;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+}
+.navbar ul a:hover,
+.navbar ul a:focus,
+.navbar ul a:active{
+    background-color: #000;
+    color: var(--secondary-color);
+    opacity: .7;
+}
+
+/* ====================== main Section ======================= */
+.movie-post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+.post{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.post-info h3{
+    padding: 20px;
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+.post-info p{
+    padding: 40px;
+    line-height: 1.8;
+}
+/* ===================== watch todays section ==============*/
+.card-contain{
+    padding: 40px;
+    background-color: #000;
+    color: #fff;
+}
+.card-contain h3{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.card-contain span{
+    display: inline-block;
+    margin: 0 25px 10px 0;
+}
+.card-contain p{
+    margin: 0 0 20px 0;
+}
+.card-contain a{
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.watch-card{
+    margin-bottom: 20px;
+}
+
+.watch-today{
+    margin: 20px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==============Download section now ====================== */
+.download-card,
+.download-content,
+.download-link,
+.download-rating{
+    display: flex;
+    flex-direction: column;
+}
+.download-card{
+    margin: 20px;
+}
+.download-link{
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+}
+.download-link a{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.download-link a span{
+    display: block;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.download-link a i{
+    font-size: 30px;
+}
+.download-info{
+    background-color: #fff;
+}
+.download-info .row{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+.download-info .row h4{
+    flex-basis: 25%;
+    text-transform: capitalize;
+}
+.download-info .row p{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.download-info .row img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.download-rating{
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    justify-content: center;
+}
+.download-rating span:first-child{
+    font-weight: bold;
+    font-size: 28px;
+}
+/* ========= Gallery Section ========== */
+.gallery-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.gallery-img{
+    flex-basis: 100%;
+    height: 250px;
+    margin: 0 0 10px 10px;
+}
+.gallery-img img{
+    height: 100%;
+    margin-left: -10px;
+}
+
+
+/* =========== aside Section====== */
+.side-content-right{
+    background-color: var(--primary-color);
+    color: #000;
+}
+.widget-content{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.widget{
+    padding: 30px;
+    margin-left: -10px;
+}
+.widget-nav li{
+    text-transform: capitalize;
+    list-style: none;
+    margin: 0 0 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.widget-content h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+/* =========== footer css============ */
+.footer{
+    background-color: #000; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-heading{
+    display: inline-block;
+}
+.copyright{
+    text-transform: uppercase;
+}
+
+/* ============ All Meadia Query Here =========== */
+
+@media all and (min-width : 768px){
+    .navbar ul{
+        flex-direction: row;
+    }
+    .navbar ul li{
+        text-align: center;
+    }
+    .post{
+        width: 49%;
+    }
+    .fully{
+        width: 100%;
+    }
+    .download-content{
+        flex-direction: row;
+    }
+    .download-link,
+    .download-rating{
+        flex-grow: 1;
+    }
+    .download-info{
+        flex-grow: 2;
+    }
+    .download-info .row p{
+        font-size: 16px;
+    }
+    .gallery-img{
+        flex-basis: 48%;
+    }
+}
+
+
+@media all and (min-width : 1200px) {
+    .content{
+        display: flex;
+    } 
+    .side-content-right{
+        flex: 0 0 400px;
+    }
+    .heading h1{
+        font-size: 48px;
+    }
+    /* .navbar ul{
+        flex-direction: row;
+    }
+    .navbar ul li{
+        text-align: center;
+    } */
+    .post-half{
+        width: 49%;
+    }
+    .post-one-third{
+        width: 32%;
+    }
+    .post-full{
+        width: 100%;
+    }
+    .card-body{
+        flex-direction: row;
+    }
+    .card-contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-right{
+        order: 2;
+    }
+    .gallery-img.sm{
+        flex-basis: 34%;
+    }
+    .gallery-img.md{
+        flex-basis: 39%;
+    }
+    .gallery-img.xs{
+        flex-basis: 19%;
+    }
+    .gallery-img.lg{
+        flex-basis: 54%;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width:1200px){
+    .widget{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .widget-content{
+        flex-basis: 48%;
+    }
+}
+
